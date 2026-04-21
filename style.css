@@ -44,8 +44,7 @@ header p {
 
 /* LOGO */
 .logo-grande {
-    width: 160px;
-    max-width: 100%;
+    width: clamp(120px, 20vw, 280px);
     height: auto;
     display: block;
     margin: 0 auto 10px;
