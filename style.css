@@ -281,15 +281,12 @@ header.hero {
     }
 }
 .logo-grande{
-    width: 180px;
-    max-width: 80%;
+    width: 160px;
+    max-width: 70%;
     height: auto;
     display: block;
     margin: 0 auto 10px;
 }
 
 
-/* Empuja el footer solo cuando falta contenido */
-footer, .footer, .footer-bar {
-    margin-top: auto;
-}
+
