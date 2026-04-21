@@ -238,32 +238,26 @@ header p {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-
-    header {
+header.hero {
         padding: 20px 10px;
         text-align: center;
     }
 
-    .logo-titulo {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .logo-titulo img {
-        width: 60px !important;
-        height: 60px !important;
+    /* LOGO REAL */
+    .logo-grande {
+        width: 100px;
+        max-width: 70%;
+        height: auto;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
 
-    header h1 {
+    header.hero h1 {
         font-size: 24px;
         margin: 5px 0;
     }
 
-    header p {
+    header.hero p {
         font-size: 14px;
         margin: 0;
     }
@@ -286,7 +280,7 @@ header p {
         max-width: 320px;
     }
 }
-.logo-titulo{
+.logo-grande{
     width: 180px;
     max-width: 80%;
     height: auto;
