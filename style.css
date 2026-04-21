@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(135deg, #cde7ff, #ffd6f6, #e0ccff);
+    box-sizing: border-box;
 }
 
 /* HEADER MÁS PRO */
@@ -29,6 +30,23 @@ header h1 {
 header p {
     margin: 5px 0 0;
     color: #555;
+}
+
+/* LOGO + TITULO */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* LOGO (PC) */
+.logo-titulo img {
+    width: 90px !important;
+    height: 90px !important;
+    object-fit: contain;
 }
 
 /* CATÁLOGO */
@@ -76,6 +94,7 @@ header p {
 .tarjeta a:hover {
     background: #1ebe5d;
 }
+
 /* BOTÓN FLOTANTE WHATSAPP */
 .whatsapp-float {
     position: fixed;
@@ -98,6 +117,8 @@ header p {
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+
+/* MENÚ */
 .menu {
     position: fixed;
     top: 15px;
@@ -122,7 +143,8 @@ header p {
 .menu a:hover {
     color: #ff4fb0;
 }
-/* ===== PREMIUM BAKERY SHOP FOOTER ===== */
+
+/* FOOTER PREMIUM */
 .footer {
     background: linear-gradient(135deg, #ffffff, #f7f2ff);
     color: #444;
@@ -133,22 +155,18 @@ header p {
     box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
 }
 
-/* TITULO */
 .footer-contenido h3 {
     margin: 0;
     font-size: 24px;
     color: #333;
-    letter-spacing: 1px;
 }
 
-/* TEXTO */
 .footer-contenido p {
     margin: 6px 0 15px;
     color: #666;
     font-size: 14px;
 }
 
-/* REDES */
 .redes {
     display: flex;
     justify-content: center;
@@ -165,38 +183,20 @@ header p {
     border-radius: 12px;
     font-size: 13px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-/* EFECTO PREMIUM */
 .redes a:hover {
     transform: translateY(-3px);
-    background: #fff;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
 
-/* COPYRIGHT */
 .copy {
     font-size: 12px;
     color: #888;
     margin-top: 15px;
-    letter-spacing: 0.5px;
-}
-.logo-titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 32px;
 }
 
-/* FORZAR TAMAÑO DEL LOGO */
-.logo-titulo img {
-    width: 256px !important;
-    height: 256px !important;
-    object-fit: contain;
-}
-/* BOTÓN FLOTANTE WHATSAPP */
+/* BOTÓN WHATSAPP */
 .btn-wsp-flotante {
     position: fixed;
     bottom: 20px;
@@ -211,15 +211,16 @@ header p {
     justify-content: center;
     font-size: 26px;
     text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     z-index: 1000;
     transition: 0.3s;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 .btn-wsp-flotante:hover {
     transform: scale(1.1);
 }
+
+/* ESTADO TIENDA */
 .estado {
     text-align: center;
     font-weight: bold;
@@ -227,28 +228,37 @@ header p {
     font-size: 16px;
 }
 
-/* ABIERTO */
 .abierto {
     color: green;
 }
 
-/* CERRADO */
 .cerrado {
     color: red;
 }
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
-    .catalogo {
-        flex-direction: column;
-        align-items: center;
+    header {
+        padding: 20px 10px;
     }
 
-    .tarjeta {
-        width: 90%;
+    .logo-titulo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .logo-titulo img {
+        width: 70px !important;
+        height: 70px !important;
     }
 
     header h1 {
         font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
     }
 
     .menu {
@@ -258,11 +268,12 @@ header p {
         padding: 8px 10px;
     }
 
-    .logo-titulo img {
-        width: 30px !important;
-        height: 30px !important;
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
     }
-}
-* {
-    box-sizing: border-box;
+
+    .tarjeta {
+        width: 90%;
+    }
 }
