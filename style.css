@@ -296,6 +296,7 @@ body {
     flex-direction: column;
 }
 
-.catalogo {
-    flex: 1;
+/* Empuja el footer solo cuando falta contenido */
+footer, .footer, .footer-bar {
+    margin-top: auto;
 }
