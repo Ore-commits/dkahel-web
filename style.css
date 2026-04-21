@@ -244,14 +244,14 @@ header p {
         text-align: center;
     }
 
-    .logo-grande {
+    .logo-titulo {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 8px;
     }
 
-    .logo-grande img {
+    .logo-titulo img {
         width: 60px !important;
         height: 60px !important;
         display: block;
@@ -286,7 +286,7 @@ header p {
         max-width: 320px;
     }
 }
-.logo-grande {
+.logo-titulo{
     width: 180px;
     max-width: 80%;
     height: auto;
