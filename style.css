@@ -44,8 +44,8 @@ header p {
 
 /* LOGO (PC) */
 .logo-titulo img {
-    width: 90px !important;
-    height: 90px !important;
+    width: 80px !important;
+    height: 80px !important;
     object-fit: contain;
 }
 
@@ -249,8 +249,8 @@ header p {
     }
 
     .logo-titulo img {
-        width: 70px !important;
-        height: 70px !important;
+        width: 60px !important;
+        height: 60px !important;
     }
 
     header h1 {
