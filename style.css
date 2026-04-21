@@ -187,6 +187,22 @@ header p {
         flex-wrap: wrap;
     }
 }
+html, body {
+    height: 100%;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.catalogo {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
 
 
