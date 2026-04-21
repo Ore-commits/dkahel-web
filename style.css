@@ -16,7 +16,7 @@ body {
     background: linear-gradient(135deg, #cde7ff, #ffd6f6, #e0ccff);
 }
 
-/* CONTENEDOR GENERAL (CLAVE PARA PC) */
+/* CONTENEDOR GENERAL */
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,9 +42,9 @@ header p {
     color: #555;
 }
 
-/* LOGO */
+/* LOGO (PC GRANDE) */
 .logo-grande {
-    width: clamp(120px, 20vw, 280px);
+    width: 260px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -59,6 +59,7 @@ header p {
     justify-content: center;
     gap: 25px;
     padding: 30px 15px;
+    min-height: 60vh; /* empuja el footer abajo */
 }
 
 /* TARJETAS */
@@ -121,20 +122,19 @@ header p {
     color: #ff4fb0;
 }
 
+/* FOOTER BONITO (ARREGLADO) */
 .footer {
-    width: 100%;
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 40px auto 0;
     padding: 40px 20px;
     text-align: center;
 
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(12px);
+    background: linear-gradient(135deg, #ffffff, #f7f2ff);
 
     border-top: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 -5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
 }
 
-/* CONTENIDO INTERNO */
 .footer h3 {
     margin: 0;
     font-size: 22px;
@@ -147,7 +147,6 @@ header p {
     color: #666;
 }
 
-/* REDES O LINKS */
 .footer a {
     display: inline-block;
     margin: 6px;
@@ -190,6 +189,7 @@ header p {
         padding: 20px 10px;
     }
 
+    /* LOGO PEQUEÑO EN CELULAR */
     .logo-grande {
         width: 100px;
     }
@@ -220,6 +220,5 @@ header p {
         flex-wrap: wrap;
     }
 }
-
 
 
