@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <nav class="menu">
     <a href="index.html">Inicio</a>
     <a href="index1.html">Productos</a>
 </nav>
-<header class="hero">
-
-    <img src="img/logo.png" class="logo-grande">
-
-    <h1>D'KAHEL</h1>
-
-    <p> Pasteleria Creativa ❤️</p>
-
-    <p class="horario">🕒 Atención: 11:00 AM - 10:00 PM</p>
-
+<header id="inicio">
+    <h1 class="logo-titulo">
+    <img src="img/logo.png">
+    </h1>
+    
 </header>
-<p id="estado-tienda" class="estado">Estado: ...</p>
+
+<section class="catalogo" id="productos">
+
+    <div class="tarjeta">
+        <img src="img/ft1.jpg" alt="ft1">
+    </div>
+
+    <div class="tarjeta">
+        <img src="img/ft2.jpg" alt="ft2">
+    </div>
+
+    <div class="tarjeta">
+        <img src="img/ft3.jpg" alt="ft3">
+    </div>
+</section>
+    <p id="estado" class="estado"></p>
 <!-- BOTÓN FLOTANTE WHATSAPP -->
 <a href="#" onclick="enviarWhatsApp()" class="btn-wsp-flotante">
     💬
@@ -30,14 +41,40 @@
 <footer id="contacto" class="footer">
     
     <div class="footer-contenido">
+
+        <h3>🍰 D'KAHEL</h3>
+        <p>Postres hechos con amor ❤️</p>
+
         <div class="redes">
             <a href="https://wa.me/51999016622" target="_blank">💬 WhatsApp</a>
             <a href="https://www.facebook.com/dkahel.dk" target="_blank">📘 Facebook</a>
             <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
         </div>
+
         <p class="copy">© 2026 D'KAHEL - Todos los derechos reservados</p>
+
     </div>
-<script src="script.js"></script>
+<script>
+function actualizarEstado() {
+    const ahora = new Date();
+    const hora = ahora.getHours();
+
+    const estado = document.getElementById("estado");
+
+    if (hora >= 11 && hora < 22) {
+        estado.textContent = "🟢 ABIERTO";
+        estado.classList.remove("cerrado");
+        estado.classList.add("abierto");
+    } else {
+        estado.textContent = "🔴 CERRADO";
+        estado.classList.remove("abierto");
+        estado.classList.add("cerrado");
+    }
+}
+
+actualizarEstado();
+setInterval(actualizarEstado, 60000); // se actualiza cada minuto
+</script>
 </footer>
 </body>
 </html>

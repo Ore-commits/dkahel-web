@@ -13,6 +13,6 @@ function enviarWhatsApp(mensaje) {
         return;
     }
 
-    let url = "https://wa.me/51999016622?text=" + encodeURIComponent(mensaje);
+    let url = "https://wa.me/51919495679?text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");
 }

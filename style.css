@@ -192,8 +192,8 @@ header p {
 
 /* FORZAR TAMAÑO DEL LOGO */
 .logo-titulo img {
-    width: 128px !important;
-    height: 128px !important;
+    width: 200px !important;
+    height: 200px !important;
     object-fit: contain;
 }
 /* BOTÓN FLOTANTE WHATSAPP */
@@ -236,4 +236,3 @@ header p {
 .cerrado {
     color: red;
 }
-
