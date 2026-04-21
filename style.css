@@ -122,14 +122,48 @@ header p {
     color: #ff4fb0;
 }
 
-/* FOOTER */
 .footer {
-    max-width: 1200px;
-    margin: 40px auto 0;
-    background: linear-gradient(135deg, #ffffff, #f7f2ff);
-    padding: 40px 15px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 20px;
     text-align: center;
+
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(12px);
+
     border-top: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTENIDO INTERNO */
+.footer h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* REDES O LINKS */
+.footer a {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #444;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    transform: translateY(-3px);
+    background: #ffe4f5;
 }
 
 /* BOTÓN WHATSAPP */
