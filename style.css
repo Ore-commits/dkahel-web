@@ -59,7 +59,7 @@ header p {
     justify-content: center;
     gap: 25px;
     padding: 30px 15px;
-    min-height: 60vh; /* empuja el footer abajo */
+    min-height: 70vh; /* empuja el footer abajo */
 }
 
 /* TARJETAS */
@@ -167,7 +167,7 @@ header p {
 /* BOTÓN WHATSAPP */
 .btn-wsp-flotante {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     background: #25D366;
     color: white;
@@ -219,6 +219,12 @@ header p {
         padding: 8px 10px;
         flex-wrap: wrap;
     }
+}
+.estado {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 
