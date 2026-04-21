@@ -1,0 +1,198 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 20 abr. 2026, 6:07:10 p. m.
+    Author     : KaHeL
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #cde7ff, #ffd6f6, #e0ccff);
+}
+
+/* HEADER MÁS PRO */
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+/* TARJETAS MÁS MODERNAS */
+.tarjeta {
+    background: white;
+    border-radius: 20px;
+    width: 260px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGEN */
+.tarjeta img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* BOTÓN WHATSAPP */
+.tarjeta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta a:hover {
+    background: #1ebe5d;
+}
+/* BOTÓN FLOTANTE WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 55px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+.menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 20px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff4fb0;
+}
+/* ===== PREMIUM BAKERY SHOP FOOTER ===== */
+.footer {
+    background: linear-gradient(135deg, #ffffff, #f7f2ff);
+    color: #444;
+    padding: 40px 15px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+}
+
+/* TITULO */
+.footer-contenido h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* TEXTO */
+.footer-contenido p {
+    margin: 6px 0 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* REDES */
+.redes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #444;
+    background: rgba(255,255,255,0.9);
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* EFECTO PREMIUM */
+.redes a:hover {
+    transform: translateY(-3px);
+    background: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* COPYRIGHT */
+.copy {
+    font-size: 12px;
+    color: #888;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 32px;
+}
+
+/* FORZAR TAMAÑO DEL LOGO */
+.logo-titulo img {
+    width: 256px !important;
+    height: 256px !important;
+    object-fit: contain;
+}

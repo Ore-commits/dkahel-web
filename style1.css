@@ -1,0 +1,90 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 20 abr. 2026, 7:19:39 p. m.
+    Author     : KaHeL
+*/
+/* MISMO ESTILO BASE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #cde7ff, #ffd6f6, #e0ccff);
+}
+
+/* MENÚ */
+.menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background: white;
+    width: 260px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer-bar {
+    width: 100%;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
+
