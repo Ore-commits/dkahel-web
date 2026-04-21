@@ -287,14 +287,7 @@ header.hero {
     display: block;
     margin: 0 auto 10px;
 }
-html, body {
-    height: 100%;
-}
 
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 /* Empuja el footer solo cuando falta contenido */
 footer, .footer, .footer-bar {
